@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mp4播放插入</title>
+	<script type="text/javascript" src="../internal.js"></script>
+	<!-- jquery -->
+    <script type="text/javascript" src="../../third-party/jquery-1.10.2.min.js"></script>
+     <!-- webuploader -->
+    <script src="../../third-party/webuploader/webuploader.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../third-party/webuploader/webuploader.css">
+	<!-- image dialog -->
+	<link rel="stylesheet" type="text/css" href="../../themes/default/dialogbase.css">
+    <link rel="stylesheet" href="jaudio.css" type="text/css" />
+    <script type="text/javascript" src="component.js"></script>
+    <link rel="stylesheet" type="text/css" href="weixinAudio/weixinAudio.css">
+    <script type="text/javascript" src="weixinAudio/weixinAudio.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+        <div id="tabhead" class="tabhead">
+            <span class="tab" data-content-id="mp3">插入MP3</span>
+           <!--  <span class="tab" data-content-id="mp4Link">腾讯视频</span> -->
+        </div>
+        <div id="tabbody" class="tabbody">
+
+            <!-- 上传视频 -->
+            <div id="mp3" class="panel">
+                <div class="box">
+                    <!--上传按钮-->
+            		<div class="box-center" id="upBtnBox">
+						<img src="./image/image.png" >
+		                <a class="btn btn-large" style="display: block;" id="select_video">
+							选择音频文件
+		                </a>
+                    </div>
+                    <!-- 上传类型为视频 -->
+                    <div class="mup-box-item hidden" id="upViewBox">
+                        <img src="./image/video.jpg" id="upImg" class="hidden">
+                        <div class="item-video-progress-box">
+                            <div class="item-video-progress" id="upProgress">
+                                <div class="item-video-progress-pre" id="upProgressPre"></div>
+                                <div class="item-video-progress-percent" id="upPercent">0%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="weixinAudio" class="hidden">
+                        <div style="text-align: left;padding: 10px;">
+                            标题：<input type="text" id="title" name="">
+                            来源：<input type="text" id="source" name="">
+                        </div>
+                        <!-- audio 容器-->
+                        <p class="weixinAudio ">
+                           <audio src="" id="media" width="1" height="1" preload></audio>
+                           <span id="audio_area" class="db audio_area">
+                           <span class="audio_wrp db">
+                           <span class="audio_play_area">
+                           <i class="icon_audio_default"></i>
+                           <i class="icon_audio_playing"></i>
+                                    </span>
+                           <span id="audio_length" class="audio_length tips_global">3:07</span>
+                           <span class="db audio_info_area">
+                                        <strong id="s_title" class="db audio_title">未知标题</strong>
+                                        <span id="s_source" class="audio_source tips_global">未知来源</span>
+                           </span>
+                           <span id="audio_progress" class="progress_bar" style="width: 0%;"></span>
+                           </span>
+                           </span>
+                        </p>
+                    </div>
+            	</div>
+            </div>
+            <div id="preview" class="hidden">
+                 <section class="unieditor">
+                    <section style="text-align:center;">
+                        <iframe class="video_iframe" style="position: relative;height:80px;width:100%;z-index: 0;" scrolling="no" allowfullscreen="" frameborder="0"></iframe>
+                    </section>
+                </section><p><br/></p>
+            </div>
+        </div>
+       
+    </div>
+	</div>
+</body>
+</html>

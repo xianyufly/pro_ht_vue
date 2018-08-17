@@ -1,0 +1,106 @@
+/*
+分页工具条容器
+*/
+body{
+	background-color:white !important; 
+}
+*{
+	font-size: 12px !important;
+}
+.requiredSp{
+	color: #e46665;
+    font-size: 16px;
+}
+.pager-box{
+	width:100%;
+	overflow:auto;
+	overflow-y: hidden;
+	text-align: right;
+}
+
+.clearfix{
+    overflow:hidden;
+    _zoom:1;
+  }
+.clearfix:after{
+  content: "";
+  display:block;
+  clear: both;
+  height: 0;
+  visibility:hidden;
+}
+
+.el-button--small {
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.el-button+.el-button {
+     margin-left: 0px !important; 
+}
+
+.marker {
+    color: #1f2d3d;
+    padding: 4px 10px;
+    border: 2px solid #e2e2e2;
+    white-space: nowrap;
+    font-size: 12px;
+    font-family: "";
+    background-color: #eef1f6;
+}
+
+@media screen and (min-width: 768px){
+	.mmc #main-menu-bg {
+	    width: 0px !important;
+	}
+	.mmc #main-menu {
+		width: 0px !important;
+	}
+	.mmc #main-wrapper {
+		padding-left: 0px !important;
+	}
+}
+@media screen and (min-width: 480px){
+	.mmc #main-menu-bg {
+	    width: 0px !important;
+	}
+	.mmc #main-menu {
+		width: 0px !important;
+	}
+	.mmc #main-wrapper {
+		padding-left: 0px !important;
+	}
+}
+
+
+
+/**
+ * 媒体查询弹出层
+ */
+
+/**@media screen and (min-width: 768px){
+	.el-dialog--tiny {
+	    width: 300px !important;
+	}
+	.el-dialog--small {
+	    width: 450px !important;
+	}
+	.el-dialog--large {
+	    width: 600px !important;
+	}
+} */
+
+@media screen and (max-width: 768px){
+	.el-dialog,.el-message-box{
+		width: 90% !important;
+	}
+	.el-dialog--tiny{
+		width: 90% !important;
+	}
+	.el-dialog--samll {
+	    width: 90% !important;
+	}
+	.el-dialog--large {
+	    width: 90% !important;
+	}
+}
